@@ -1,13 +1,14 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import { Mail } from 'lucide-react'
+import { Mail, FileText } from 'lucide-react'
 import { GitHubIcon, LinkedInIcon } from '@/components/SocialIcons'
 
 const socials = [
   { icon: GitHubIcon, href: 'https://github.com/Kingsam147', label: 'GitHub' },
   { icon: LinkedInIcon, href: 'https://linkedin.com/in/samdarius', label: 'LinkedIn' },
   { icon: Mail, href: 'mailto:samueldarius1470@gmail.com', label: 'Email' },
+  { icon: FileText, href: '/resume.pdf', label: 'Resume' },
 ]
 
 export default function Contact() {

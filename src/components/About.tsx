@@ -59,16 +59,7 @@ export default function About() {
         </p>
         <p>
           Outside of code, I run, mentor younger kids at my church, and am a proud
-          graduate of the{' '}
-          <a
-            href="https://hackdiversity.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-amber hover:underline transition-all duration-200"
-          >
-            Hack.Diversity
-          </a>{' '}
-          fellowship.
+          graduate of the Hack.Diversity fellowship.
         </p>
       </div>
     </section>

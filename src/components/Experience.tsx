@@ -22,7 +22,7 @@ const experiences = [
     period: 'Jan 2025 — May 2025',
     role: 'Software Engineer Fellow',
     company: 'Hack.Diversity',
-    companyUrl: 'https://hackdiversity.com',
+    companyUrl: '',
     bullets: [
       'Solved 18+ algorithm problems applying dynamic programming, recursion, and hash map strategies with explicit time/space complexity analysis.',
       'Practiced production Git workflows across the full cycle: branching, pull requests, code review, and Agile sprint collaboration.',
@@ -78,15 +78,21 @@ export default function Experience() {
                 {role}
               </span>
               <span className="font-display font-semibold text-base text-muted">·</span>
-              <a
-                href={companyUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-display font-semibold text-base text-amber hover:underline inline-flex items-center gap-1 transition-all duration-200"
-              >
-                {company}
-                <ExternalLink size={12} />
-              </a>
+              {companyUrl ? (
+                <a
+                  href={companyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-display font-semibold text-base text-amber hover:underline inline-flex items-center gap-1 transition-all duration-200"
+                >
+                  {company}
+                  <ExternalLink size={12} />
+                </a>
+              ) : (
+                <span className="font-display font-semibold text-base text-amber">
+                  {company}
+                </span>
+              )}
             </div>
 
             <ul className="space-y-2 mb-4">
