@@ -69,6 +69,18 @@ export default function Hero({ activeSection }: HeroProps) {
               )
             })}
           </ul>
+
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-4 py-2 mt-1 transition-all duration-200"
+          >
+            <span className="block h-px w-6 bg-muted group-hover:w-10 group-hover:bg-amber transition-all duration-300" />
+            <span className="text-xs font-code tracking-widest uppercase text-muted group-hover:text-amber transition-colors duration-200">
+              Resume
+            </span>
+          </a>
         </nav>
       </div>
 

@@ -10,7 +10,7 @@ const projects = [
     number: '01',
     name: 'Pokémon Damage Calculator',
     description:
-      'A full-stack app exposing 32 REST endpoints across 1,200+ Pokémon, 900+ moves, and 300+ abilities — with a multi-tier caching strategy where every layer has a distinct justification. Redis handles shared state across serverless instances (cutting enemy-team load from 1,384ms to 196ms — 7×). localStorage caches 6 immutable datasets to avoid network round-trips entirely. User teams and damage calculations are deliberately left uncached: teams are constantly mutating with no size cap; calculations have ~1,000 variable combinations per fight and would yield near-zero cache hit rate.',
+      'Filled a gap no tool addressed: Pokémon Radical Red is a ROM hack with custom types, moves, and abilities not covered by any public API — extracted and structured the full dataset from the game\'s source code, then built the only damage calculator that exists for it. A full-stack app exposing 32 REST endpoints across 1,200+ Pokémon, 900+ moves, and 300+ abilities — with a multi-tier caching strategy where every layer has a distinct justification. Redis handles shared state across serverless instances (cutting enemy-team load from 1,384ms to 196ms — 7×). localStorage caches 6 immutable datasets to avoid network round-trips entirely. User teams and damage calculations are deliberately left uncached: teams are constantly mutating with no size cap; calculations have ~1,000 variable combinations per fight and would yield near-zero cache hit rate.',
     highlight: '1,384ms → 196ms · 7× faster',
     tech: ['Node.js', 'Express', 'MongoDB', 'Redis', 'Auth0', 'Cloudflare', 'AWS S3'],
     github: 'https://github.com/Kingsam147/pokemon-radical-red-database',
@@ -21,7 +21,7 @@ const projects = [
     number: '02',
     name: 'Tourgate',
     description:
-      'Co-founded and serve as technical lead. Tourgate aggregates real estate agent messages from six platforms (Facebook, Apartments.com, Craigslist, Redfin, MLS, YGL) into a single AI-managed inbox. The AI agent autonomously reads and replies, with dynamic model routing — simpler requests use a cheaper model, complex ones escalate — reducing API cost without degrading quality. Conversation context is kept fast via a Redis sliding window cache (last 20 messages); full history lives in Supabase PostgreSQL, chosen over MongoDB because message threads are relational and queries are field-selective.',
+      'Co-founded and serve as technical lead. Tourgate pools together real estate agent messages from six platforms (Facebook, Apartments.com, Craigslist, Redfin, MLS, YGL) into a single AI-managed inbox. The AI agent autonomously reads and replies, with dynamic model routing — simpler requests use a cheaper model, complex ones use a more expensive one — reducing API cost without hindering quality. Conversation context is kept fast via a Redis sliding window cache (last 20 messages); full history lives in Supabase PostgreSQL, chosen over MongoDB because message threads are relational and queries never require the whole object.',
     highlight: 'AI model routing by complexity · Redis sliding window',
     tech: ['Next.js', 'Supabase', 'PostgreSQL', 'Redis', 'OpenAI', 'Vercel'],
     github: 'https://github.com/Kingsam147/tourgate',
@@ -32,7 +32,7 @@ const projects = [
     number: '03',
     name: 'Car Website — Appointment Booking',
     description:
-      'Booking platform for a car detailing business, replacing phone-call scheduling with self-serve appointments. The slot API generates all 19 time windows (8AM–5PM, 30-min intervals) on the fly and subtracts booked ones — only real bookings hit the database. Availability checks run in O(1) via a Set. A 60-minute same-day buffer filters past slots. Slots are Cloudflare edge-cached for 5 minutes; race conditions are caught at write time with a user-facing fallback.',
+      'Booking platform for a car detailing business, replacing phone-call scheduling with self-serve appointments. The slot API generates all 19 time windows (8AM–5PM, 30-min intervals) on the fly and subtracts booked ones — only real bookings hit the database. Availability checks run in O(1) by utilizing a Set. A 60-minute same-day buffer filters past slots. Slots are Cloudflare edge-cached for 5 minutes; race conditions are caught at write time with a user-facing fallback.',
     highlight: 'Compute-over-store · O(1) Set lookup · write-time race guard',
     tech: ['Next.js', 'MongoDB', 'Cloudflare', 'Vercel'],
     github: 'https://github.com/Kingsam147/CarWebsite',
@@ -43,7 +43,7 @@ const projects = [
     number: '04',
     name: 'Student Scheduling System',
     description:
-      "Led a 5-developer Agile team as Scrum Master through a 2–3 month cycle. Broke a team deadlock by meeting each member 1-on-1, taking notes, and synthesizing their ideas into a shared direction — a faster path to alignment than group debate. Built the ICS parser that reads university .ical files, extracts unavailable time blocks per weekday, and persists them so the scheduler can reject any conflicting shift assignment.",
+      "Led a 5-developer Agile team as Scrum Master through a 2–3 month cycle. Manged to get the team to coperate with one another by meeting each member 1-on-1, taking notes, and combining their ideas into a shared plan. Built the ICS parser that reads university .ical files, extracts unavailable time blocks per weekday, and persists them so the scheduler can reject any conflicting shift assignment.",
     highlight: 'Scrum Master · ICS conflict detection · Google OAuth',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Google OAuth'],
     github: 'https://github.com/Kingsam147/CS410-Student-Scheduling-Project',
@@ -54,7 +54,7 @@ const projects = [
     number: '05',
     name: 'Pinterest Clone',
     description:
-      'Hack.Diversity capstone project. Improved performance and UX of a React/Node.js/Express/MongoDB application in an Agile team environment through targeted pull requests and peer code reviews.',
+      'Hack.Diversity capstone project. Improved performance and debugged an already existing UX of a React/Node.js/Express/MongoDB application in an Agile team environment through targeted pull requests and peer code reviews.',
     highlight: 'Hack.Diversity Capstone · Agile collaboration',
     tech: ['React', 'Node.js', 'Express', 'MongoDB'],
     github: 'https://github.com/Kingsam147/pinterest-clone',
