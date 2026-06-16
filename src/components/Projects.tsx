@@ -36,7 +36,7 @@ const projects = [
     highlight: 'Compute-over-store · O(1) Set lookup · write-time race guard',
     tech: ['Next.js', 'MongoDB', 'Cloudflare', 'Vercel'],
     github: 'https://github.com/Kingsam147/CarWebsite',
-    live: 'https://carwebsite-coral.vercel.app',
+    live: 'https://carwebsite-coral.vercel.app?access=sbdjlsbadjsba',
     featured: false,
   },
   {
