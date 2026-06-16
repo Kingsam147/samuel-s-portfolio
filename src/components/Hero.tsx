@@ -37,8 +37,9 @@ export default function Hero({ activeSection }: HeroProps) {
         </h2>
 
         <p className="text-sm leading-relaxed max-w-xs text-body">
-          I build systems that think about cost, speed, and scale before they
-          think about anything else.
+          Having studied memory management and operating system principles,
+          I always build systems while keeping in mind the cost, speed, and scale 
+          before actually writing any code.
         </p>
 
         {/* Nav */}

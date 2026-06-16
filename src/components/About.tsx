@@ -26,15 +26,15 @@ export default function About() {
 
       <div className="space-y-5 text-sm leading-7 text-body">
         <p>
-          I&apos;m a backend engineer and co-founder based in Holbrook, MA. I build systems
-          that lead with design — data modeling from access patterns, multi-tier caching
-          with a clear justification for every layer, and multi-tenant authorization that
-          treats resource ownership as a first principle, not an afterthought.
-          Domain-Driven Design isn&apos;t a pattern I reach for because it reads well on a
-          resume. It&apos;s how I actually structure work when the complexity warrants it.
+          I'm a backend engineer and co-founder based in Holbrook, MA. I prioritize 
+          system design in project building: clear reasons for my database choice, multi-tier 
+          caching for speed, with a clear justification for every layer, and multi-tenant authorization 
+          that secures user data while making it easy for them to access. 
+          Domain-Driven Design isn't a pattern I reach for because it reads well on a
+          resume. I find it the best way to map out complex projects. 
         </p>
         <p>
-          I&apos;m currently co-founding{' '}
+          I'm currently co-founding{' '}
           <a
             href="https://tourgate.vercel.app"
             target="_blank"
@@ -43,7 +43,7 @@ export default function About() {
           >
             Tourgate
           </a>
-          , a platform that brings every real estate agent&apos;s messages and meetings
+          , a platform that brings every real estate agent's messages and meetings
           under one roof — with an AI agent that handles the inbox for them. I inherited
           the starter code, hardened the security, and now own all technical decisions.
           That kind of end-to-end ownership is exactly what I work toward.
@@ -52,8 +52,8 @@ export default function About() {
           I believe engineers go further with a strong community around them. That
           conviction started on the cross country team at UMass Boston, where the hardest
           workouts were only survivable because of the people running alongside me, and
-          it&apos;s been reinforced by over eight years of volunteering at church — where
-          I&apos;ve watched what sustained, consistent presence does over time. It shows
+          it's been reinforced by over eight years of volunteering at church — where
+          I've watched what sustained, consistent presence does over time. It shows
           up in how I lead technical projects: I meet people individually, make space for
           every perspective, and move fast once real alignment is there.
         </p>
