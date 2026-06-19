@@ -2,7 +2,7 @@
 
 Personal portfolio site built with Next.js and TypeScript. Features a two-panel layout with a sticky sidebar on desktop and scroll-based active section tracking using the Intersection Observer API.
 
-Live at: [add your URL here]
+Live at: https://samuel-s-portfolio.vercel.app
 
 ## Tech Stack
 
