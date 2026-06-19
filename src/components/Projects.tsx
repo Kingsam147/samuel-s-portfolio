@@ -43,7 +43,7 @@ const projects = [
     number: '04',
     name: 'Student Scheduling System',
     description:
-      "Led a 5-developer Agile team as Scrum Master through a 2–3 month cycle. Manged to get the team to coperate with one another by meeting each member 1-on-1, taking notes, and combining their ideas into a shared plan. Built the ICS parser that reads university .ical files, extracts unavailable time blocks per weekday, and persists them so the scheduler can reject any conflicting shift assignment.",
+      "Led a 5-developer Agile team as Scrum Master through a 2–3 month cycle. Managed to get the team to cooperate with one another by meeting each member 1-on-1, taking notes, and combining their ideas into a shared plan. Built the ICS parser that reads university .ical files, extracts unavailable time blocks per weekday, and persists them so the scheduler can reject any conflicting shift assignment.",
     highlight: 'Scrum Master · ICS conflict detection · Google OAuth',
     tech: ['React', 'Node.js', 'Express', 'MongoDB', 'Google OAuth'],
     github: 'https://github.com/Kingsam147/CS410-Student-Scheduling-Project',
